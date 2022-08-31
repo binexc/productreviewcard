@@ -1,0 +1,9 @@
+@import './AllComponentStyles.scss';
+
+.cardbackground {
+	width: 100vw;
+	height: 100vh;
+	padding-top:24px;
+	
+	background: $primary_cream;
+}
