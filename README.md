@@ -3,14 +3,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Specifically:
-npx create-react-app prod-review-card --template typescript
+
+```
+> npx create-react-app prod-review-card --template typescript
+```
 
 ## Required Installs:
 
 This project requires the following two installs:
 
-npm install sass
-npm install react-icons
+```
+> npm install sass
+> npm install react-icons
+```
 
 ### `npm run build`
 
