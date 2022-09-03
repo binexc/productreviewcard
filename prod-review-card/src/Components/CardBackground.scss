@@ -1,0 +1,24 @@
+@import './AllComponentStyles.scss';
+
+.cardbackground {
+	width: 100vw;
+	height: 100vh;
+	padding-top:32px;
+	
+	background: $primary_cream;
+}
+
+@media screen and (min-width:$MOBILE_BREAK_POINT) {
+	.cardbackground {
+		width: 80vw;
+		height: 90vh;
+		margin: auto;
+
+		padding-top:15%;
+
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+}
+
+

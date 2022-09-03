@@ -1,0 +1,147 @@
+@import './AllComponentStyles.scss';
+
+.primarycard {
+	width: 88vw;
+	height: 92vh;
+	margin: auto;
+	margin-top: 0px;
+	overflow: hidden;
+	border-radius: $cornerRadius;
+	background:$neutral_white;
+}
+
+/*Flex properties*/
+.primarycard {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+}
+
+.flexitem {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.primarycard img {
+	width: 100%;
+}
+
+p {
+	font-weight: 700;
+	font-size:14px;
+	color: $neutral_dark;
+	font-family: Montserrat, Times, Serif
+}
+
+p:first-of-type {
+	height: 20px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+p.note {
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.impactnote {
+	font-size:28px;
+	font-weight:700;
+	font-family: 'Fraunces', Times, Serif;
+}
+
+p.impactnote {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color:$neutral_verydark;
+}
+
+span.impactnote {
+	margin-right: 24px;
+	color: $primary_dark;
+}
+
+.obsoletenote {
+	color: $neutral_dark;
+	text-decoration: line-through;
+}
+
+.priceitems {
+	margin-bottom: 8px;
+}
+
+button {
+	width: 92%;
+	height: 48px;
+	align-self: center;
+	font-weight:bolder;
+	color: $neutral_white;
+	background: $primary_dark;
+	border-radius: $cornerRadius - 4;
+	font-family: Montserrat, Times, Serif;
+}
+
+.addbtn:hover {
+	background-color: $primary_extradark;
+}
+
+.cartimg {
+	font-size:medium;
+	margin-right: 10px;
+}
+
+.carttxt {
+	font-size: medium;
+}
+
+@media screen and (min-width:$MOBILE_BREAK_POINT) {
+	/*Flex Properties*/
+	.primarycard {
+		max-width: 700px;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+	}
+
+	.primarycard {
+		width: 74vw;
+		height: 52vh;
+		margin: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		border-radius: $cornerRadius;
+		background:$neutral_white;
+	}
+
+	.primarycard img {
+		height: 100%;
+	}
+
+	.cartimg {
+		font-size:large;
+	}
+	
+	.carttxt {
+		font-size:large;
+	}
+}
+
+@media  screen and (min-width:$MAX_SCREEN)  {
+	.primarycard {
+		flex-flow: row nowrap;
+		align-items: flex-start;
+	}
+
+	.primarycard {
+		width: 68vw;
+		height: 58vh;
+		margin: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		border-radius: $cornerRadius;
+		background:$neutral_white;
+	}
+
+	.primarycard img {
+		height: 100%;
+	}
+}
